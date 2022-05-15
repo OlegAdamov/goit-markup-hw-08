@@ -1,0 +1,224 @@
+// Modal-window
+
+.backdrop {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function),
+    transform var(--transition-duration) var(--transition-timing-function);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transform: scale(0);
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  padding: 40px;
+}
+
+// Modal-window-content
+
+
+.icon-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #000;
+  outline: 0px;
+
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.icon-close:hover,
+.icon-close:focus {
+  fill: #2196f3;
+}
+
+.modal-h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: #212121;
+}
+
+.modal-form {
+  display: block;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.modal-content {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+.modal-input {
+  height: 40px;
+  width: 100%;
+  padding: 0 0 0 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-origin: padding-box;
+  border-radius: 4px;
+  outline: 0;
+
+  transition: border var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid #2196f3;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  fill: #000;
+
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
+  fill: #188ce8;
+}
+
+.comment {
+  display: flex;
+  resize: none;
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+.comment::placeholder,
+.modal-input,
+.modal-input:focus-visible {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.checkbox {
+  position: relative;
+  display: flex;
+  padding-left: 36px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.modal-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon-check {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+.modal-checkbox:checked ~ .icon-check {
+  background-color: #2196f3;
+  background-image: url(../images/icon-check.svg);
+  background-origin: border-box;
+  background-size: contain;
+  border-color: #2196f3;
+  background-repeat: no-repeat;
+}
+.modal-checkbox:focus ~ .icon-check {
+  border-color: #2196f3;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #188ce8;
+}
+
+

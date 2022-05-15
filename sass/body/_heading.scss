@@ -1,0 +1,41 @@
+.hero-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: var(--hero-text-title-color, #212121);
+  margin-bottom: 50px;
+}
+.hero-heading-img {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.hero-heading-img li {
+  position: relative;
+}
+
+.hero-heading-img p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 27px;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

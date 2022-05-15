@@ -1,0 +1,44 @@
+.hero-ptf {
+  background-color: var(--hero-background-color);
+
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+&__list li {
+  margin: 13px;
+  border: 1px solid #eeeeee;
+}
+&__list a {
+  display: block;
+
+  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
+}
+&__list a:hover,
+&__list a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+&__subtitle {
+  display: block;
+  padding: 20px 24px;
+  justify-content: space-around;
+  background: #ffffff;
+}
+&__name {
+  font-weight: $font-weidht-700;
+  font-size: $font-size-18;
+  line-height: $line-height-2;
+  letter-spacing: $letter-spacing-006;
+  color: var(--hero-text-title-color, #212121);
+  margin: 0 0 4px 0;
+}
+&__site {
+  font-size: $font-size-16;
+  line-height: $line-height-188;
+  letter-spacing: $letter-spacing-003;
+  color: var(--hero-text-color, #757575);
+  margin: 0;
+}
+}

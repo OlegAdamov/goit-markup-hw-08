@@ -1,0 +1,33 @@
+.hero-ptf__overlay {
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  &-wind {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+.hero-ptf__list a:hover &-wind,
+.hero-ptf__list a:focus &-wind {
+  transform: translateY(0);
+}
+
+&-wind p {
+  font-size: $font-size-18;
+  line-height: $line-height-156;
+  letter-spacing: $letter-spacing-003;
+  color: #ffffff;
+  overflow: auto;
+
+  padding: 63px 24px;
+}
+}

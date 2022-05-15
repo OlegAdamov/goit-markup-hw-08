@@ -1,0 +1,19 @@
+@import "./base/reset";
+@import "./utils/variables";
+
+@import "./components/title";
+
+@import "./body/header-footer/header";
+@import "./body/hero";
+@import "./body/heading";
+@import "./body/modal";
+@import "./body/studio-overlay";
+@import "./body/permanent-clients";
+@import "./body/social-team";
+@import "./body/specific";
+
+@import "./body/portfolio/filters";
+@import "./body/portfolio/list";
+@import "./body/portfolio/ptf-overlay";
+
+@import "./body/header-footer/footer";
