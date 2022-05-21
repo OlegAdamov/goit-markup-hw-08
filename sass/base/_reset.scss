@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 p,
 h1,
@@ -32,10 +32,23 @@ img {
   list-style: none;
 }
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: 100%;
+  padding: 0;
   margin: 0 auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 .section {
-  padding: var(--typical-padding) 0;
+  padding: 60px 15px;
+
+  @media screen and (min-width: $desktop) {
+  padding: var(--typical-padding) 15px;
+}
 }
