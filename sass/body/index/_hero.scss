@@ -1,4 +1,4 @@
-.hero-title {
+.hero__title {
   margin: 0 auto;
 }
 .h1 {
@@ -8,7 +8,7 @@
 .cursor {
   cursor: pointer;
 }
-.hero-title-text {
+.hero__title--text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -22,7 +22,7 @@
   margin-bottom: 30px;
   max-width: 696px;
 }
-.hero-btn {
+.hero--btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -40,7 +40,7 @@
 
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
-.hero-btn:hover {
+.hero--btn:hover {
   background-color: #188ce8;
 }
 

@@ -178,7 +178,7 @@ img {
   margin-right: 50px;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto;
 }
 
@@ -191,7 +191,7 @@ img {
   cursor: pointer;
 }
 
-.hero-title-text {
+.hero__title--text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -206,7 +206,7 @@ img {
   max-width: 696px;
 }
 
-.hero-btn {
+.hero--btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -224,17 +224,17 @@ img {
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.hero-btn:hover {
+.hero--btn:hover {
   background-color: #188ce8;
 }
 
-.overlay-hero {
-  max-width: 1600px;
-  height: 600px;
+.overlay__hero {
+  max-width: 480px;
+  height: 400px;
   outline: 1px solid black;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-comand.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
