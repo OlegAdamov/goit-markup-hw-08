@@ -4,11 +4,11 @@
   padding-bottom: 60px;
 }
 .footer > .container {
-  display: flex;
+  // display: flex;
   align-items: baseline;
 }
 .footer-link-w {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.14;
@@ -95,12 +95,12 @@
   color: #ffffff;
 }
 
-.footer-subscribe {
-  display: flex;
-}
+// .footer-subscribe {
+//   display: flex;
+// }
 .subscribe-input,
 .subscribe-input:focus-visible {
-  width: 358px;
+  width: 100px;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
@@ -108,7 +108,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  /* outline: 0px; */
+  // outline: 0px;
 }
 .subscribe-input::placeholder,
 .subscribe-input,
@@ -146,7 +146,7 @@
 .button-subscribe:hover,
 .button-subscribe:focus {
   background-color: #188ce8;
-  /* outline: 0; */
+  // outline: 0;
 }
 
 .subscribe-icon-send {

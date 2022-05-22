@@ -89,7 +89,6 @@ img {
 }
 
 .header .container {
-  display: flex;
   align-items: center;
 }
 
@@ -552,7 +551,6 @@ img {
 }
 
 .permanent-clients-group {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -620,11 +618,13 @@ img {
   }
 }
 .hero-our-team__box {
-  margin-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   max-width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.hero-our-team__box:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .hero-our-team__box {
@@ -791,7 +791,6 @@ img {
 }
 
 .footer > .container {
-  display: flex;
   align-items: baseline;
 }
 
@@ -891,13 +890,9 @@ img {
   color: #ffffff;
 }
 
-.footer-subscribe {
-  display: flex;
-}
-
 .subscribe-input,
 .subscribe-input:focus-visible {
-  width: 358px;
+  width: 100px;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
@@ -905,7 +900,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  /* outline: 0px; */
 }
 
 .subscribe-input::placeholder,
@@ -941,7 +935,6 @@ img {
 .button-subscribe:hover,
 .button-subscribe:focus {
   background-color: #188ce8;
-  /* outline: 0; */
 }
 
 .subscribe-icon-send {
