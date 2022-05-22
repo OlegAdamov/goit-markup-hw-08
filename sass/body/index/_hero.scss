@@ -1,37 +1,45 @@
 .hero__title {
   margin: 0 auto;
+
+  &--text {
+    @include font(null, 30px, 900, 26px, 1.62, 0.06em, uppercase, center, #ffffff, null);
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+
+    @media screen and (min-width: $desktop) {
+         
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    }
+  }
 }
 .h1 {
-  background: #2f303a;
+  background-color: #2f303a;
+  padding: 118px 0;
+
+      @media screen and (min-width: $desktop) {
+
   padding: 200px 0;
+      }
 }
+
+
+
+
 .cursor {
   cursor: pointer;
 }
-.hero__title--text {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  max-width: 696px;
-}
+
 .hero--btn {
+  @include font(null, null, 700, 16px, 1.88, 0.06em, null, null, #ffffff, var(--header-text-background-color));
+
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   display: block;
   align-items: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: var(--header-text-background-color, #2196f3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   margin: 0 auto;
@@ -39,8 +47,7 @@
   position: relative;
 
   transition: background-color var(--transition-duration) var(--transition-timing-function);
+  &:hover {
+    background-color: #188ce8;
+  }
 }
-.hero--btn:hover {
-  background-color: #188ce8;
-}
-
