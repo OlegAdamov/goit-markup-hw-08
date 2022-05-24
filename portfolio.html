@@ -22,17 +22,69 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <a href="./index.html" class="header--link-w link"
           >Web<span class="header--studio">Studio</span></a
         >
-
-        <button type="button" class="header__button is-open">
-          <svg width="40" height="40" aria-label="Включатель мобильного меню">
-            <!-- <use class="icon--mobile-close" href="./images/icons.svg#icon-mobile-close"></use> -->
+        <button
+          type="button"
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Открыть мобильное меню">
             <use class="icon--mobile-menu" href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
+
+        <div class="header-modal js-menu-container" id="mobile-menu">
+          <button type="button" class="header-modal__button js-close-menu">
+            <svg width="40" height="40" aria-label="Закрыть мобильное меню">
+              <use class="icon--mobile-close" href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <nav class="header-modal--nav">
+            <ul class="header-modal--list list">
+              <li class="header-modal--list-a">
+                <a href="./index.html" lang="ru" class="header-modal--link link">Студия</a>
+              </li>
+              <li class="header-modal--list-a">
+                <a href="./portfolio.html" lang="ru" class="header-modal--link current link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-modal--list-a">
+                <a href="" lang="ru" class="header-modal--link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="list header-modal--cnt">
+              <li class="header-modal--cnt-1">
+                <a href="tel:+380961111111" class="header-modal--phone link"> +38 096 111 11 11 </a>
+              </li>
+              <li class="header-modal--cnt-2">
+                <a href="mailto:info@devstudio.com" class="header-modal--mail link">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="header-modal__social list">
+              <li class="header-modal__social-group">
+                <a href="https://www.instagram.com/" class="link">Instagram</a>
+              </li>
+              <li class="header-modal__social-group">
+                <a href="https://twitter.com/" class="link">Twitter</a>
+              </li>
+              <li class="header-modal__social-group">
+                <a href="https://www.facebook.com/" class="link">Facebook</a>
+              </li>
+              <li class="header-modal__social-group">
+                <a href="https://www.linkedin.com/" class="link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <nav class="header--nav">
           <ul class="header--list list">
@@ -293,28 +345,28 @@
           <h2 class="social-text">присоединяйтесь</h2>
           <ul class="social-list list">
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://www.instagram.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://twitter.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://www.facebook.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://www.linkedin.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -347,5 +399,8 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

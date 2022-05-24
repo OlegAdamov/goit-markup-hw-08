@@ -88,7 +88,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #8a0505;
 }
 .header__container {
   display: flex;
@@ -118,11 +118,6 @@ img {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .header--nav {
-    margin-right: 84px;
-  }
-}
 .header--studio {
   color: #212121;
 }
@@ -131,8 +126,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header .container {
-    padding-top: 20px;
-    padding-bottom: 14px;
+    padding-top: 22px;
+    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -236,7 +231,7 @@ img {
 
 .header--cnt {
   display: flex;
-  margin: 0;
+  margin: 0 15px 0 auto;
   padding: 0;
 }
 @media screen and (max-width: 767px) {
@@ -256,7 +251,38 @@ img {
 }
 
 .header-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+.header-modal__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  fill: #000000;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.header-modal__button:hover, .header-modal__button:focus {
+  fill: var(--accent-color);
+}
+.header-modal.is-open {
+  transform: translateX(0);
+}
+.header-modal--list-a:not(:last-child) {
+  margin-bottom: 32px;
 }
 .header-modal--link {
   font-weight: 500;
@@ -266,15 +292,18 @@ img {
   text-align: center;
   color: #000000;
 }
-.header-modal--link:not(:last-child) {
-  margin-bottom: 32px;
-}
 .header-modal--link.current {
   color: var(--accent-color);
 }
 .header-modal--link:hover, .header-modal--link:focus {
   color: var(--accent-color);
   border-bottom: 4px solid #2196f3;
+}
+.header-modal--cnt > li {
+  margin-bottom: 32px;
+}
+.header-modal--cnt > li + li {
+  margin-bottom: 64px;
 }
 .header-modal--phone {
   margin-bottom: 32px;
@@ -292,6 +321,25 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.header-modal__social {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-modal__social-group {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+.header-modal__social-group:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.header-modal__social-group a {
+  color: #2196f3;
+}
+
 .hero__title {
   margin: 0 auto;
 }

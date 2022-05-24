@@ -27,21 +27,23 @@
           >Web<span class="header--studio">Studio</span></a
         >
 
-
-        <button type="button" class="header__button is-open">
+        <button
+          type="button"
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40" aria-label="Открыть мобильное меню">
             <use class="icon--mobile-menu" href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
-        
-        <div class="header-modal is-hedden">
-          
-          <button type="button" class="header-modal__button">
+
+        <div class="header-modal js-menu-container" id="mobile-menu">
+          <button type="button" class="header-modal__button js-close-menu">
             <svg width="40" height="40" aria-label="Закрыть мобильное меню">
               <use class="icon--mobile-close" href="./images/icons.svg#icon-mobile-close"></use>
             </svg>
           </button>
-            
           <nav class="header-modal--nav">
             <ul class="header-modal--list list">
               <li class="header-modal--list-a">
@@ -54,28 +56,34 @@
                 <a href="" lang="ru" class="header-modal--link link">Контакты</a>
               </li>
             </ul>
-            <ul class="header-modal__social">
-              <li><a class="header-modal__social-group" href="">Instagram</a></li>
-              <li><a class="header-modal__social-group" href="">Twitter</a></li>
-              <li><a class="header-modal__social-group" href="">Facebook</a></li>
-              <li><a class="header-modal__social-group" href="">LinkedIn</a></li>
-            </ul>
           </nav>
-
-          <ul class="list header-modal--cnt">
-            <li class="header-modal--cnt-1">
-              <a href="tel:+380961111111" class="header-modal--phone link"> +38 096 111 11 11 </a>
-            </li>
-            <li class="header-modal--cnt-1">
-              <a href="mailto:info@devstudio.com" class="header-modal--mail link">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
+          <div>
+            <ul class="list header-modal--cnt">
+              <li class="header-modal--cnt-1">
+                <a href="tel:+380961111111" class="header-modal--phone link"> +38 096 111 11 11 </a>
+              </li>
+              <li class="header-modal--cnt-2">
+                <a href="mailto:info@devstudio.com" class="header-modal--mail link">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="header-modal__social list">
+              <li class="header-modal__social-group">
+                <a href="https://www.instagram.com/" class="link">Instagram</a>
+              </li>
+              <li class="header-modal__social-group">
+                <a href="https://twitter.com/" class="link">Twitter</a>
+              </li>
+              <li class="header-modal__social-group">
+                <a href="https://www.facebook.com/" class="link">Facebook</a>
+              </li>
+              <li class="header-modal__social-group">
+                <a href="https://www.linkedin.com/" class="link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-
-
 
         <nav class="header--nav">
           <ul class="header--list list">
@@ -273,28 +281,28 @@
                 <p class="hero-our-team__prof">Product Designer</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.instagram.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://twitter.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.facebook.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.linkedin.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -310,28 +318,28 @@
                 <p class="hero-our-team__prof">Frontend Developer</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.instagram.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://twitter.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.facebook.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.linkedin.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -347,28 +355,28 @@
                 <p class="hero-our-team__prof">Marketing</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.instagram.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://twitter.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.facebook.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.linkedin.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -384,28 +392,28 @@
                 <p class="hero-our-team__prof">UI Designer</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team-__oc">
-                    <a href="" class="hero-our-team-__oc--link">
+                    <a href="https://www.instagram.com/" class="hero-our-team-__oc--link">
                       <svg class="hero-our-team-__oc-i-con" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://twitter.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.facebook.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="" class="hero-our-team__soc--link">
+                    <a href="https://www.linkedin.com/" class="hero-our-team__soc--link">
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -492,28 +500,28 @@
           <h2 class="social-text">присоединяйтесь</h2>
           <ul class="social-list list">
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://www.instagram.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://twitter.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://www.facebook.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-soc">
-              <a href="" class="social-soc-link">
+              <a href="https://www.linkedin.com/" class="social-soc-link">
                 <svg class="social-soc-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -548,6 +556,6 @@
     ></script>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/modal-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
