@@ -1,0 +1,33 @@
+.header-modal {
+  background-color: #ffffff;
+
+  &--link {
+    @include font(null, null, 500, 40px, 1.18, 0.02em, null, center, #000000, null);
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &.current {
+      color: var(--accent-color);
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-bottom: 4px solid #2196f3;
+    }
+  }
+  &--phone {
+      @include font(null, 32px, 500, 34px, 1.18, 0.02em, null, null, var(--accent-color), null);
+  }
+  &--mail {
+      @include font(null, 64px, 500, 24px, 1.17, 0.02em, null, null, #757575, null);
+  }
+  &__social-group {
+      
+  }
+}
+
+
+
+
+
+// @include font($wd, $mb, $fw, $fs, $lh, $ls, $tt, $ta, $col, $bcol);

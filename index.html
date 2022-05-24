@@ -27,12 +27,55 @@
           >Web<span class="header--studio">Studio</span></a
         >
 
+
         <button type="button" class="header__button is-open">
-          <svg width="40" height="40" aria-label="Включатель мобильного меню">
-            <!-- <use class="icon-mobile-close" href="./images/icons.svg#icon-mobile-close"></use> -->
-            <use class="icon-mobile-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+          <svg width="40" height="40" aria-label="Открыть мобильное меню">
+            <use class="icon--mobile-menu" href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
+        
+        <div class="header-modal is-hedden">
+          
+          <button type="button" class="header-modal__button">
+            <svg width="40" height="40" aria-label="Закрыть мобильное меню">
+              <use class="icon--mobile-close" href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+            
+          <nav class="header-modal--nav">
+            <ul class="header-modal--list list">
+              <li class="header-modal--list-a">
+                <a href="./index.html" lang="ru" class="header-modal--link current link">Студия</a>
+              </li>
+              <li class="header-modal--list-a">
+                <a href="./portfolio.html" lang="ru" class="header-modal--link link">Портфолио</a>
+              </li>
+              <li class="header-modal--list-a">
+                <a href="" lang="ru" class="header-modal--link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header-modal__social">
+              <li><a class="header-modal__social-group" href="">Instagram</a></li>
+              <li><a class="header-modal__social-group" href="">Twitter</a></li>
+              <li><a class="header-modal__social-group" href="">Facebook</a></li>
+              <li><a class="header-modal__social-group" href="">LinkedIn</a></li>
+            </ul>
+          </nav>
+
+          <ul class="list header-modal--cnt">
+            <li class="header-modal--cnt-1">
+              <a href="tel:+380961111111" class="header-modal--phone link"> +38 096 111 11 11 </a>
+            </li>
+            <li class="header-modal--cnt-1">
+              <a href="mailto:info@devstudio.com" class="header-modal--mail link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+
 
         <nav class="header--nav">
           <ul class="header--list list">
@@ -505,6 +548,6 @@
     ></script>
 
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/modal-menu.js"></script> -->
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

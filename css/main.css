@@ -255,6 +255,43 @@ img {
   }
 }
 
+.header-modal {
+  background-color: #ffffff;
+}
+.header-modal--link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+}
+.header-modal--link:not(:last-child) {
+  margin-bottom: 32px;
+}
+.header-modal--link.current {
+  color: var(--accent-color);
+}
+.header-modal--link:hover, .header-modal--link:focus {
+  color: var(--accent-color);
+  border-bottom: 4px solid #2196f3;
+}
+.header-modal--phone {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.header-modal--mail {
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
 .hero__title {
   margin: 0 auto;
 }
