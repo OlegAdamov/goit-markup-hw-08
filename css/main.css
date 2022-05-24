@@ -10,7 +10,7 @@
   --typical-padding: 94px;
   --button-color: #2196f3;
   --button-color-hover: #188ce8;
-  --transition-duration: 250ms;
+  --transition-duration: 500ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -79,6 +79,7 @@ img {
 
 .section {
   padding: 60px 15px;
+  border: 1px solid red;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -87,9 +88,30 @@ img {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: inline-flex;
+    margin: 10px 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: #000000;
+    transition: fill var(--transition-duration) var(--transition-timing-function);
+  }
+  .header__button:hover, .header__button:focus {
+    fill: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .header--nav {
@@ -109,7 +131,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header .container {
-    display: flex;
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -193,7 +222,14 @@ img {
   margin-right: 8px;
 }
 @media screen and (min-width: 1200px) {
-  .header--connect-mail, .header--connect-smartphone {
+  .header--connect-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .header--connect-smartphone {
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
   }
 }

@@ -1,14 +1,38 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
-  &--nav {
-    @media screen and (max-width: 767px) {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    @media screen and (max-width: ($tablet - 1)) {
+      display: inline-flex;
+      margin: 10px 15px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      fill: #000000;
+
+      transition: fill var(--transition-duration) var(--transition-timing-function);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+      }
+    }
+    @media screen and (min-width: $tablet) {
       display: none;
     }
-    @media screen and (min-width: $tablet){
+  }
+
+  &--nav {
+    @media screen and (max-width: ($tablet - 1)) {
+      display: none;
+    }
+    @media screen and (min-width: $tablet) {
       margin-right: 84px;
-      
     }
   }
   &--studio {
@@ -18,8 +42,12 @@
     align-items: center;
 
     @media screen and (min-width: $tablet) {
-      display: flex;
-      
+      padding-top: 20px;
+      padding-bottom: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   }
 }
@@ -61,22 +89,19 @@
     letter-spacing: 0.03em;
     color: var(--accent-text-color, #2196f3);
     margin-left: 15px;
-    
-    
-    
+
     @media screen and (min-width: $tablet) {
       margin-right: 88px;
-      
     }
     @media screen and (min-width: $desktop) {
       margin-left: 0px;
       margin-right: 93px;
       font-size: 26px;
       line-height: 1.19;
-
     }
   }
 }
+
 .header--list {
   display: flex;
   margin: 0;
@@ -93,11 +118,10 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
-  
+
   transition: color var(--transition-duration) var(--transition-timing-function);
-  
+
   @media screen and (min-width: $desktop) {
-    
     font-size: 14px;
     line-height: 1.14;
   }
@@ -110,13 +134,20 @@
   &-smartphone {
     fill: currentColor;
     margin-right: 8px;
-    
-    @media screen and (min-width: $desktop) {
-      margin-right: 10px;
-      
-    }
   }
 
+  @media screen and (min-width: $desktop) {
+    &-mail {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+    &-smartphone {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
 }
 
 .header--cnt {
@@ -133,9 +164,15 @@
   }
 
   @media screen and (min-width: $desktop) {
-    
     &-1:not(:last-child) {
       margin-right: 50px;
     }
   }
 }
+
+// &__button .icon-mobile-close {
+//   display: none;
+// }
+// &__button.is-open .icon-mobile-close {
+//   display: block;
+// }

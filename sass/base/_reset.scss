@@ -51,6 +51,7 @@ img {
 .section {
   padding: 60px 15px;
 
+  border: 1px solid red;
   @media screen and (min-width: $desktop) {
   padding: var(--typical-padding) 15px;
 }

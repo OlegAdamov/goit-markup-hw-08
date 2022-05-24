@@ -22,10 +22,18 @@
   <body>
     <!-- ШАПКА -->
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <a href="./index.html" class="header--link-w link"
           >Web<span class="header--studio">Studio</span></a
         >
+
+        <button type="button" class="header__button is-open">
+          <svg width="40" height="40" aria-label="Включатель мобильного меню">
+            <!-- <use class="icon-mobile-close" href="./images/icons.svg#icon-mobile-close"></use> -->
+            <use class="icon-mobile-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+
         <nav class="header--nav">
           <ul class="header--list list">
             <li class="header--list-a">
@@ -497,6 +505,6 @@
     ></script>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/modal-menu.js"></script>
+    <!-- <script src="./js/modal-menu.js"></script> -->
   </body>
 </html>
