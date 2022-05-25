@@ -47,7 +47,7 @@
   }
   &__prof {
     margin: 0;
-    @include font(null, 16px, none, 16px, 1.19, 0.03em, null, center, var(--hero-text-color) null);
+    @include font(null, 16px, none, 16px, 1.19, 0.03em, null, center, var(--hero-text-color), null);
 
   }
   &__list {

@@ -146,19 +146,32 @@
             <li>
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
-                  <img
-                    srcset="
-                      ./images/portfolio/tehnokryak-tablet.jpg     354w,
-                      ./images/portfolio/tehnokryak-desktop.jpg    370w,
-                      ./images/portfolio/tehnokryak-mobile.jpg     450w,
-                      ./images/portfolio/tehnokryak-tablet@2x.jpg  708w,
-                      ./images/portfolio/tehnokryak-desktop@2x.jpg 740w,
-                      ./images/portfolio/tehnokryak-mobile@2x.jpg  900w
-                    "
-                    sizes="(min-width: $desktop) 270px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
-                    src="images/portfolio/tehnokryak-desktop.jpg"
-                    alt="Tehnokryak"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/tehnokryak-desktop.jpg    1x, ./images/portfolio/tehnokryak-desktop@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehnokryak-tablet.jpg    1x,
+                        ./images/portfolio/tehnokryak-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tehnokryak-mobile.jpg    1x,
+                        ./images/portfolio/tehnokryak-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+
+                  </picture>
+                    <!-- <img src="images/portfolio/tehnokryak-desktop.jpg" alt="Tehnokryak" /> -->
+
                   <div class="hero-ptf__overlay-wind">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -177,7 +190,16 @@
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
                   <img
-                    src="images/portfolio/new_orlean_vs_golden_star.jpg"
+                    srcset="
+                      ./images/portfolio/new_orlean_vs_golden_star-tablet.jpg     354w,
+                      ./images/portfolio/new_orlean_vs_golden_star-desktop.jpg    370w,
+                      ./images/portfolio/new_orlean_vs_golden_star-mobile.jpg     450w,
+                      ./images/portfolio/new_orlean_vs_golden_star-tablet@2x.jpg  708w,
+                      ./images/portfolio/new_orlean_vs_golden_star-desktop@2x.jpg 740w,
+                      ./images/portfolio/new_orlean_vs_golden_star-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/new_orlean_vs_golden_star-desktop.jpg"
                     alt="new_orlean_vs_golden_star"
                     width="370"
                   />
@@ -198,7 +220,19 @@
             <li>
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
-                  <img src="images/portfolio/seafood.jpg" alt="Seafood" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/seafood-tablet.jpg     354w,
+                      ./images/portfolio/seafood-desktop.jpg    370w,
+                      ./images/portfolio/seafood-mobile.jpg     450w,
+                      ./images/portfolio/seafood-tablet@2x.jpg  708w,
+                      ./images/portfolio/seafood-desktop@2x.jpg 740w,
+                      ./images/portfolio/seafood-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/seafood-desktop.jpg"
+                    alt="Seafood"
+                  />
                   <div class="hero-ptf__overlay-wind">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi, sequi sed
@@ -216,7 +250,19 @@
             <li>
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
-                  <img src="images/portfolio/prime.jpg" alt="Prime" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/prime-tablet.jpg     354w,
+                      ./images/portfolio/prime-desktop.jpg    370w,
+                      ./images/portfolio/prime-mobile.jpg     450w,
+                      ./images/portfolio/prime-tablet@2x.jpg  708w,
+                      ./images/portfolio/prime-desktop@2x.jpg 740w,
+                      ./images/portfolio/prime-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/prime-desktop.jpg"
+                    alt="Prime"
+                  />
                   <div class="hero-ptf__overlay-wind">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium
@@ -233,7 +279,19 @@
             <li>
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
-                  <img src="images/portfolio/boxes.jpg" alt="Boxes" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/boxes-tablet.jpg     354w,
+                      ./images/portfolio/boxes-desktop.jpg    370w,
+                      ./images/portfolio/boxes-mobile.jpg     450w,
+                      ./images/portfolio/boxes-tablet@2x.jpg  708w,
+                      ./images/portfolio/boxes-desktop@2x.jpg 740w,
+                      ./images/portfolio/boxes-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/boxes-desktop.jpg"
+                    alt="Boxes"
+                  />
                   <div class="hero-ptf__overlay-wind">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, magni.
@@ -251,9 +309,17 @@
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
                   <img
-                    src="images/portfolio/inspiration_has_no_borders.jpg"
+                    srcset="
+                      ./images/portfolio/inspiration_has_no_borders-tablet.jpg     354w,
+                      ./images/portfolio/inspiration_has_no_borders-desktop.jpg    370w,
+                      ./images/portfolio/inspiration_has_no_borders-mobile.jpg     450w,
+                      ./images/portfolio/inspiration_has_no_borders-tablet@2x.jpg  708w,
+                      ./images/portfolio/inspiration_has_no_borders-desktop@2x.jpg 740w,
+                      ./images/portfolio/inspiration_has_no_borders-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/inspiration_has_no_borders-desktop.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
                   />
                   <div class="hero-ptf__overlay-wind">
                     <p>
@@ -272,9 +338,17 @@
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
                   <img
-                    src="images/portfolio/limited_edition.jpg"
+                    srcset="
+                      ./images/portfolio/limited_edition-tablet.jpg     354w,
+                      ./images/portfolio/limited_edition-desktop.jpg    370w,
+                      ./images/portfolio/limited_edition-mobile.jpg     450w,
+                      ./images/portfolio/limited_edition-tablet@2x.jpg  708w,
+                      ./images/portfolio/limited_edition-desktop@2x.jpg 740w,
+                      ./images/portfolio/limited_edition-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/limited_edition-desktop.jpg"
                     alt="Limited Edition"
-                    width="370"
                   />
                   <div class="hero-ptf__overlay-wind">
                     <p>
@@ -293,7 +367,19 @@
             <li>
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
-                  <img src="images/portfolio/lab.jpg" alt="LAB" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/lab-tablet.jpg     354w,
+                      ./images/portfolio/lab-desktop.jpg    370w,
+                      ./images/portfolio/lab-mobile.jpg     450w,
+                      ./images/portfolio/lab-tablet@2x.jpg  708w,
+                      ./images/portfolio/lab-desktop@2x.jpg 740w,
+                      ./images/portfolio/lab-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/lab-desktop.jpg"
+                    alt="LAB"
+                  />
                   <div class="hero-ptf__overlay-wind">
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nostrum
@@ -312,9 +398,17 @@
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
                   <img
-                    src="images/portfolio/growing_business.jpg"
+                    srcset="
+                      ./images/portfolio/growing_business-tablet.jpg     354w,
+                      ./images/portfolio/growing_business-desktop.jpg    370w,
+                      ./images/portfolio/growing_business-mobile.jpg     450w,
+                      ./images/portfolio/growing_business-tablet@2x.jpg  708w,
+                      ./images/portfolio/growing_business-desktop@2x.jpg 740w,
+                      ./images/portfolio/growing_business-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 370px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/growing_business-desktop.jpg"
                     alt="Growing Business"
-                    width="370"
                   />
                   <div class="hero-ptf__overlay-wind">
                     <p>
