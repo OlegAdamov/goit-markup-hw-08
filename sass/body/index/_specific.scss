@@ -1,4 +1,5 @@
 .specific {
+ 
   @media screen and (min-width: $tablet) {
     margin-left: -15px;
     margin-right: -15px;
@@ -17,7 +18,9 @@
   }
 
   li {
-    width: 100%;
+    @media screen and (max-width: $mobile) {
+      max-width: 450px;
+    }
     @media screen and (min-width: $tablet) {
       width: calc(100% / 2 - 15px);
     }

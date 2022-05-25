@@ -686,8 +686,10 @@ img {
     margin: 0;
   }
 }
-.hero-specific li {
-  width: 100%;
+@media screen and (max-width: 480px) {
+  .hero-specific li {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-specific li {
