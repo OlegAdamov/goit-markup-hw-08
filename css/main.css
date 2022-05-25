@@ -778,6 +778,98 @@ img {
   padding-right: auto;
 }
 
+.hero-team {
+  background: #f5f4fa;
+}
+.hero-team .hero-heading {
+  margin-bottom: 30px;
+}
+
+.hero-our-team {
+  padding: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero-our-team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.hero-our-team__box {
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.hero-our-team__box:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero-our-team__box {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-our-team__box {
+    width: 354px;
+    margin: 0 15px 30px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-our-team__box {
+    width: 270px;
+  }
+}
+.hero-our-team__box--aside {
+  padding: 30px 0;
+}
+.hero-our-team__name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--hero-text-title-color);
+}
+.hero-our-team__prof {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--hero-text-color, #757575);
+  margin: 0 0 16px 0;
+}
+.hero-our-team__list {
+  display: flex;
+  justify-content: center;
+}
+.hero-our-team__soc:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+.hero-our-team__soc--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+.hero-our-team__soc--icon {
+  fill: #afb1b8;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.hero-our-team__soc--link:hover, .hero-our-team__soc--link:focus {
+  background-color: #2196f3;
+}
+.hero-our-team__soc--icon:hover .hero-our-team__soc--icon, .hero-our-team__soc--link:focus .hero-our-team__soc--icon {
+  fill: #fff;
+}
+
 .permanent-clients-group {
   justify-content: space-between;
 }
@@ -825,87 +917,6 @@ img {
   margin: 0;
   color: var(--hero-text-title-color, #212121);
   margin-bottom: 50px;
-}
-
-.hero-team {
-  background: #f5f4fa;
-}
-.hero-team .hero-heading {
-  margin-bottom: 30px;
-}
-
-.hero-our-team {
-  padding: 0;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .hero-our-team {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-.hero-our-team__box {
-  border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.hero-our-team__box:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .hero-our-team__box {
-    max-width: 354px;
-    margin: 0 15px 30px 15px;
-  }
-}
-.hero-our-team__box--aside {
-  padding: 30px 0;
-}
-.hero-our-team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--hero-text-title-color, #212121);
-  margin: 0 0 10px 0;
-}
-.hero-our-team__prof {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--hero-text-color, #757575);
-  margin: 0 0 16px 0;
-}
-.hero-our-team__list {
-  display: flex;
-  justify-content: center;
-}
-.hero-our-team__soc:not(:last-child) {
-  margin: 0 10px 0 0;
-}
-.hero-our-team__soc--link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: #fff;
-  border-radius: 50%;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
-}
-.hero-our-team__soc--icon {
-  fill: #afb1b8;
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-.hero-our-team__soc--link:hover, .hero-our-team__soc--link:focus {
-  background-color: #2196f3;
-}
-.hero-our-team__soc--icon:hover .hero-our-team__soc--icon, .hero-our-team__soc--link:focus .hero-our-team__soc--icon {
-  fill: #fff;
 }
 
 .filters {

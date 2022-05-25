@@ -146,7 +146,19 @@
             <li>
               <a href="" class="link">
                 <div class="hero-ptf__overlay">
-                  <img src="images/portfolio/tehnokryak.jpg" alt="Tehnokryak" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/tehnokryak-tablet.jpg     354w,
+                      ./images/portfolio/tehnokryak-desktop.jpg    370w,
+                      ./images/portfolio/tehnokryak-mobile.jpg     450w,
+                      ./images/portfolio/tehnokryak-tablet@2x.jpg  708w,
+                      ./images/portfolio/tehnokryak-desktop@2x.jpg 740w,
+                      ./images/portfolio/tehnokryak-mobile@2x.jpg  900w
+                    "
+                    sizes="(min-width: $desktop) 270px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                    src="images/portfolio/tehnokryak-desktop.jpg"
+                    alt="Tehnokryak"
+                  />
                   <div class="hero-ptf__overlay-wind">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и

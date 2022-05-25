@@ -199,7 +199,7 @@
       </section>
 
       <section class="section specific">
-        <div class="container ">
+        <div class="container">
           <h2 lang="ru" class="hero-heading" hidden>особенности</h2>
           <ul class="hero-specific list">
             <li>
@@ -275,13 +275,30 @@
           <h2 lang="ru" class="hero-heading">Наша команда</h2>
           <ul class="hero-our-team list">
             <li class="hero-our-team__box">
-              <img src="images/ihor.jpg" alt="Igor Demyanenko" width="450" />
+              <img
+                srcset="
+                  ./images/ihor-desktop.jpg    270w,
+                  ./images/ihor-tablet.jpg     354w,
+                  ./images/ihor-mobile.jpg     450w,
+                  ./images/ihor-desktop@2x.jpg 540w,
+                  ./images/ihor-tablet@2x.jpg  708w,
+                  ./images/ihor-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: $desktop) 270px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                src="images/ihor-tablet.jpg"
+                alt="Igor Demyanenko"
+              />
+
               <div class="hero-our-team__box--aside">
                 <h3 class="hero-our-team__name">Игорь Демьяненко</h3>
                 <p class="hero-our-team__prof">Product Designer</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team__soc">
-                    <a href="https://www.instagram.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -295,14 +312,22 @@
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.facebook.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.linkedin.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -312,13 +337,29 @@
               </div>
             </li>
             <li class="hero-our-team__box">
-              <img src="images/olga.jpg" alt="Olga Repina" width="450" />
+              <img
+                srcset="
+                  ./images/olga-desktop.jpg    270w,
+                  ./images/olga-tablet.jpg     354w,
+                  ./images/olga-mobile.jpg     450w,
+                  ./images/olga-desktop@2x.jpg 540w,
+                  ./images/olga-tablet@2x.jpg  708w,
+                  ./images/olga-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: $desktop) 270px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                src="images/olga-tablet.jpg"
+                alt="Olga Repina"
+              />
               <div class="hero-our-team__box--aside">
                 <h3 class="hero-our-team__name">Ольга Репина</h3>
                 <p class="hero-our-team__prof">Frontend Developer</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team__soc">
-                    <a href="https://www.instagram.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -332,14 +373,22 @@
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.facebook.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.linkedin.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -349,13 +398,29 @@
               </div>
             </li>
             <li class="hero-our-team__box">
-              <img src="images/mikola.jpg" alt="Nikolai Tarasov" width="450" />
+              <img
+                srcset="
+                  ./images/mikola-desktop.jpg    270w,
+                  ./images/mikola-tablet.jpg     354w,
+                  ./images/mikola-mobile.jpg     450w,
+                  ./images/mikola-desktop@2x.jpg 540w,
+                  ./images/mikola-tablet@2x.jpg  708w,
+                  ./images/mikola-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: $desktop) 270px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                src="images/mikola-tablet.jpg"
+                alt="Nikolai Tarasov"
+              />
               <div class="hero-our-team__box--aside">
                 <h3 class="hero-our-team__name">Николай Тарасов</h3>
                 <p class="hero-our-team__prof">Marketing</p>
                 <ul class="hero-our-team__list list">
                   <li class="hero-our-team__soc">
-                    <a href="https://www.instagram.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -369,14 +434,22 @@
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.facebook.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.linkedin.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -386,14 +459,30 @@
               </div>
             </li>
             <li class="hero-our-team__box">
-              <img src="images/mihail.jpg" alt="Mikhail Ermakov" width="450" />
+              <img
+                srcset="
+                  ./images/mihail-desktop.jpg    270w,
+                  ./images/mihail-tablet.jpg     354w,
+                  ./images/mihail-mobile.jpg     450w,
+                  ./images/mihail-desktop@2x.jpg 540w,
+                  ./images/mihail-tablet@2x.jpg  708w,
+                  ./images/mihail-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: $desktop) 270px, (min-width: $tablet) 354px, (max-width: $mobile) 450px"
+                src="images/mihail-tablet.jpg"
+                alt="Mikhail Ermakov"
+              />
               <div class="hero-our-team__box--aside">
                 <h3 class="hero-our-team__name">Михаил Ермаков</h3>
                 <p class="hero-our-team__prof">UI Designer</p>
                 <ul class="hero-our-team__list list">
-                  <li class="hero-our-team-__oc">
-                    <a href="https://www.instagram.com/" target="_blank" class="hero-our-team-__oc--link">
-                      <svg class="hero-our-team-__oc-i-con" width="20" height="20">
+                  <li class="hero-our-team__soc">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
+                      <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -406,14 +495,22 @@
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.facebook.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="hero-our-team__soc">
-                    <a href="https://www.linkedin.com/" target="_blank" class="hero-our-team__soc--link">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="hero-our-team__soc--link"
+                    >
                       <svg class="hero-our-team__soc--icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
