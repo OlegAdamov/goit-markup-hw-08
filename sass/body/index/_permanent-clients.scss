@@ -1,28 +1,47 @@
-.permanent-clients-group {
-  // display: flex;
-  justify-content: space-between;
+.permanent-clients--group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & svg {
+    fill: #afb1b8;
+  }
 }
-.permanent-clients-item {
-  width: 170px;
+.permanent-clients--item {
+  width: 210px;
   height: 92px;
-}
-.permanent-clients-group svg {
-  fill: #afb1b8;
-}
-.permanent-clients-link:hover,
-.permanent-clients-link:focus {
-  border-color: #2196f3;
-  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: ($mobile - 1)) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $mobile) {
+    &:nth-child(n + 5) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 3 * 30px) / 3);
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 6 * 30px) / 6);
+      margin-bottom: 0;
+    }
+  }
 }
 
-.permanent-clients-link:hover .permanent-clients-icon,
-.permanent-clients-link:focus .permanent-clients-icon {
-  fill: #2196f3;
-}
-.permanent-clients-icon {
+.permanent-clients--icon {
   transition: fill var(--transition-duration) var(--transition-timing-function);
+  .permanent-clients--link:hover &,
+  .permanent-clients--link:focus & {
+    fill: #2196f3;
+  }
 }
-.permanent-clients-link {
+.permanent-clients--link {
   display: flex;
   border: 1px solid #afb1b8;
   align-items: center;
@@ -31,14 +50,28 @@
   height: 100%;
 
   transition: border-color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    cursor: pointer;
+  }
 }
-.permanent-clients-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
+.permanent-clients--h2 {
   margin: 0;
-  color: var(--hero-text-title-color, #212121);
-  margin-bottom: 50px;
+  @include font(
+    null,
+    30px,
+    700,
+    36px,
+    1.17,
+    0.03em,
+    null,
+    center,
+    var(--hero-text-title-color),
+    null
+  );
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
