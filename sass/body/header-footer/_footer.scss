@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--footer-background-color);
- 
 
   // padding-top: 60px;
   // padding-bottom: 60px;
@@ -10,27 +9,34 @@
     text-align: center;
 
     @media screen and (min-width: $desktop) {
+      display: flex;
       text-align: left;
     }
   }
-  
+
   &__section {
-  @media screen and (min-width: $tablet) {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      @media screen and (min-width: $desktop) {
+        justify-content: start;
+      }
+    }
   }
-  }
 
-&__section-address {
-  margin-bottom: 60px;
+  &__section-address {
+    margin-bottom: 60px;
 
-  @media screen and (min-width: $tablet) {
-    margin-left: 76px;
+    @media screen and (min-width: $tablet) {
+      margin-left: 76px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
-}
 
   &--link-w {
     font-family: "Raleway", sans-serif;
@@ -56,7 +62,7 @@
     margin-bottom: 8px;
 
     @media screen and (min-width: $desktop) {
-      margin-bottom: 9px;
+      margin: 0 0 9px 0;
     }
   }
   &--link a {
@@ -73,16 +79,14 @@
   text-align: center;
   margin-bottom: 60px;
 
-
   @media screen and (min-width: $tablet) {
     margin-right: 86px;
     margin-left: auto;
-
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 70px;
-    margin-right: auto;
+    margin: 0 0 0 70px;
+    text-align: left;
   }
 
   &__text {
@@ -125,13 +129,16 @@
 /* ------------------subscribe__footer---------------- */
 .subscribe {
   display: block;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 }
 .subscribe__footer {
   justify-content: center;
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    
   }
   &-h2 {
     margin-bottom: 20px;
@@ -148,11 +155,8 @@
     width: 450px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: $desktop) {
-      // width: 100px;
-    }
-  }
 
+  }
   &--input,
   &--input:focus-visible {
     width: 100%;
@@ -163,8 +167,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+        @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-bottom: 0;
+    }
     // outline: 0px;
   }
+
   &--input::placeholder,
   &--input,
   &--input:focus-visible {
@@ -198,7 +208,7 @@
 
     transition: background-color var(--transition-duration) var(--transition-timing-function);
 
-        &:hover,
+    &:hover,
     &:focus {
       background-color: #188ce8;
       // outline: 0;
