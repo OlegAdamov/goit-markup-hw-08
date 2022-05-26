@@ -1,4 +1,8 @@
 .header-modal {
+  @media screen and (min-width: ($tablet - 1)) {
+    display: none;
+  }
+
   position: fixed;
   top: 0;
   left: 0;
@@ -77,5 +81,3 @@
     }
   }
 }
-
-// @include font($wd, $mb, $fw, $fs, $lh, $ls, $tt, $ta, $col, $bcol);

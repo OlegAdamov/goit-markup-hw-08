@@ -25,6 +25,11 @@
   padding: 20px 24px;
   justify-content: space-around;
   background: #ffffff;
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+    max-width: 354px;
+    
+  } 
+
 }
 &__name {
   font-weight: $font-weidht-700;

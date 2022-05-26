@@ -46,6 +46,8 @@ img {
   }
   @media screen and (min-width: $desktop) {
     width: $desktop;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .section {
@@ -53,7 +55,7 @@ img {
 
   border: 1px solid red;
   @media screen and (min-width: $desktop) {
-  padding: var(--typical-padding) 15px;
+  padding: var(--typical-padding) 0;
 }
 }
 

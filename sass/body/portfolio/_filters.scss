@@ -1,11 +1,27 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 0 50px 0;
+  justify-content: flex-start;
+  margin: 0;
+
+  @media screen and (max-width: ($tablet - 1)) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+
 
 &__item {
   padding: 0px;
+    @media screen and (max-width: ($tablet - 1)) {
+    margin-bottom: 15px;
+  }
+
 }
 &__item:not(:last-child) {
   margin-right: 8px;

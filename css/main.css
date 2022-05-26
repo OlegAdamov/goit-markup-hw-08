@@ -75,6 +75,8 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -84,7 +86,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: var(--typical-padding) 15px;
+    padding: var(--typical-padding) 0;
   }
 }
 
@@ -265,6 +267,11 @@ img {
   justify-content: space-between;
   transform: translateX(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+@media screen and (min-width: 767px) {
+  .header-modal {
+    display: none;
+  }
 }
 .header-modal__button {
   position: absolute;
@@ -752,8 +759,8 @@ img {
 }
 .what-we-do--img {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
+  justify-content: space-around;
+  margin: 0 -15px;
 }
 .what-we-do--img li {
   position: relative;
@@ -924,11 +931,32 @@ img {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 0 50px 0;
+  justify-content: flex-start;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .filters {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
 }
 .filters__item {
   padding: 0px;
+}
+@media screen and (max-width: 767px) {
+  .filters__item {
+    margin-bottom: 15px;
+  }
 }
 .filters__item:not(:last-child) {
   margin-right: 8px;
@@ -982,6 +1010,11 @@ img {
   justify-content: space-around;
   background: #ffffff;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-ptf__subtitle {
+    max-width: 354px;
+  }
+}
 .hero-ptf__name {
   font-weight: 700;
   font-size: 18px;
@@ -1008,7 +1041,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
