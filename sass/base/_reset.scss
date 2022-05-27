@@ -36,7 +36,7 @@ img {
 }
 .container {
   width: 100%;
-  padding: 0;
+  padding: 60px 15px;
   margin: 0 auto;
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -46,14 +46,11 @@ img {
   }
   @media screen and (min-width: $desktop) {
     width: $desktop;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: var(--typical-padding) 15px;
   }
 }
 .section {
-  padding: 60px 15px;
+  margin: 0;
+  padding: 0;
 
-  @media screen and (min-width: $desktop) {
-    padding: var(--typical-padding) 0;
-  }
 }
