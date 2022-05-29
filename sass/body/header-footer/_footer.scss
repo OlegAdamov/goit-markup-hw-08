@@ -15,10 +15,10 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: $tablet) {
-      width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: baseline;
+      margin-bottom: 0;
       @media screen and (min-width: $desktop) {
         justify-content: start;
       }
@@ -26,6 +26,7 @@
   }
 
   &__section-address {
+    margin-bottom: 60px;
     @media screen and (min-width: $desktop) {
       margin-left: 0;
       margin-bottom: 0;

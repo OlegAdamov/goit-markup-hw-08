@@ -7,8 +7,8 @@
   margin: -15px;
 }
 &__list li {
-  margin: 13px;
-  border: 1px solid #EEEEEE;
+  margin: 15px;
+  // border: 1px solid #EEEEEE;
 }
 &__list a {
   display: block;
@@ -25,6 +25,8 @@
   padding: 20px 24px;
   justify-content: space-around;
   background: #ffffff;
+  border: 1px solid #EEEEEE;
+
   @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
     max-width: 354px;
     
